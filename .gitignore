@@ -1,2 +1,6 @@
 
 /Api/.venv
+/Api/__pycache__
+/Api/db/__pycache__
+/Api/lib/__pycache__
+/Api/router/__pycache__
