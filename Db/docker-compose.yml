@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  postgresqldb:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: datetime
+      POSTGRES_PASSWORD: AliBig+Hi
+      POSTGRES_DB: datetime
+      PGDATA: /data/postgres
+    volumes:
+      - ./data:/data/postgres
+    ports:
+      - "15432:5432"
+    restart: unless-stopped

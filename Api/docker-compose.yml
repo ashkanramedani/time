@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  calendar.api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: calendar.api
+    volumes:
+      - ./:/app
+    ports:
+      - 6695:6695
